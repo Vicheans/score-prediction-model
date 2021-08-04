@@ -8,7 +8,7 @@ from sklearn.ensemble import RandomForestRegressor
 
 def marks_prediction(hours):
     # marks = marks
-      df = pd.read_csv("student_info.csv")
+      df = pd.read_csv("./student_info.csv")
 
       df2 = df[df.study_hours.notna()]
       print (df2)
