@@ -1,0 +1,47 @@
+body {
+    background-color: none;
+    background-color: #0093E9;
+    background-image: linear-gradient(0deg, #0093E9 0%, #80D0C7 100%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+}
+
+.dialog {
+    background: #fff;
+    width: 50%;
+    /* height: auto; */
+    margin: auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.3);
+    border: 1px solid rgba(0, 0, 0, 0.3);
+    text-align: center;
+    
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.dialog h1 {
+    font-size: 28px;
+}
+
+.dialog p {
+    color: grey;
+}
+
+.dialog input {
+    padding: 10px;
+    border-radius: 5px 0 5px 0;
+    font-size: 14px;
+}
+
+.dialog .result {
+    padding: 5px;
+    color: #fff;
+    background: grey;
+    font-size: 18px;
+}

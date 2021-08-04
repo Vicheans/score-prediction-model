@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Python Score Prediction Model</title>
+   <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+
+    <div class="dialog">
+   <h1>Model Application</h1>
+    <p>A Machine Learning Model to predict scores based on the number of study hours</p>
+        <p>find dataset resource <a href="https://drive.google.com/file/d/1cQHBomaY1yc5v03Pv9PMqLokoMJ0-945/view?usp=sharing">here</a> </p>
+    <p>Enter Number of hours</p>
+    <form action="/" method="POST">
+        <!-- <input type="text" name="username" id="" placeholder="Full name"> -->
+        <input type="text" name="hours" id="" placeholder="Number of Hours" required>
+        <!-- <button type="submit">Submit</button> -->
+        <input type="submit">
+    </form>
+
+   {% if mark %}
+    <p class="result">Predicted Score for {{hrs}} hours is <b> {{mark}}  </b> marks </p>
+    {% endif %}    
+</div>
+
+
+</body>
+</html>
