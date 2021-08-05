@@ -20,14 +20,14 @@ def marks_prediction(hours):
       X = X.values
       Y= Y.values
 
-      plt.scatter(X,Y)
-      plt.xlabel("study_hours")
-      plt.ylabel("student_marks")
-      plt.show()
+      # plt.scatter(X,Y)
+      # plt.xlabel("study_hours")
+      # plt.ylabel("student_marks")
+      # plt.show()
 
-      print(X)
-      print("=============================")
-      print(Y)
+      # print(X)
+      # print("=============================")
+      # print(Y)
 
       model = LinearRegression()
       model.fit(X, Y)
